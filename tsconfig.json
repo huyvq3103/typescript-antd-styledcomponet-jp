@@ -1,24 +1,33 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "target": "es5",
+    "experimentalDecorators": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "incremental": true,
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
     ],
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "types": [
+      "react/next",
+      "react-dom/next"
+    ],
+    "target": "es5",
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "module": "commonjs",
+    "isolatedModules": true
   },
   "include": [
     "src"
